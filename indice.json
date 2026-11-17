@@ -1,0 +1,68 @@
+{
+  "formato": 1,
+  "automacoes": [
+    {
+      "nome": "agenda-da-semana",
+      "versao": "1.1.0",
+      "titulo": "Agenda da semana",
+      "o_que_faz": "Manda todo dia, às 8h, a agenda do dia ou dos próximos 7 dias, por WhatsApp ou e-mail, separada por dia (às 21h da véspera, se amanhã cedo houver compromisso), apontando conflitos e intervalos apertados.",
+      "categoria": "Rotina do dia",
+      "quando": "Todo dia às 08:00 (às 21h da véspera, se amanhã cedo houver compromisso)",
+      "faz": [
+        "Junta a agenda do sistema, os lembretes e os compromissos escritos à mão, sem repetir",
+        "Aponta compromissos no mesmo horário e intervalos de menos de 30 minutos",
+        "Entrega por WhatsApp ou por e-mail, nos próximos 7 dias ou só no dia"
+      ],
+      "custo": "Sem IA, sem custo.",
+      "pede": [
+        {
+          "rotulo": "E-mail da pessoa dona da agenda",
+          "tipo": "texto",
+          "obrigatorio": true
+        },
+        {
+          "rotulo": "Por onde a agenda chega",
+          "tipo": "escolha",
+          "obrigatorio": false,
+          "padrao": "canal"
+        },
+        {
+          "rotulo": "O que a agenda mostra",
+          "tipo": "escolha",
+          "obrigatorio": false,
+          "padrao": "semana"
+        },
+        {
+          "rotulo": "E-mail que recebe a agenda",
+          "tipo": "texto",
+          "obrigatorio": false
+        },
+        {
+          "rotulo": "WhatsApp que recebe a agenda",
+          "tipo": "texto",
+          "obrigatorio": false
+        },
+        {
+          "rotulo": "Compromisso cedo até as",
+          "tipo": "hora",
+          "obrigatorio": false,
+          "padrao": "08:00"
+        },
+        {
+          "rotulo": "Compromissos escritos à mão",
+          "tipo": "texto",
+          "obrigatorio": false
+        }
+      ],
+      "versao_minima": "1.9.0",
+      "horario": "0 8,21 * * *",
+      "arquivo": "pacotes/agenda-da-semana-1.1.0.zip",
+      "sha256": "2a7e42372fe818d58ccd93a1e8e9ceb697d42f560b3ca16991c36e7dedff8402",
+      "assinatura": "lmWQel2vGgIJPuzVEzgfekxxTmrclROuxEuarQdUEJ7amzMVTn4jmowNzDZwwvmO+gbRzXkESMPS3uNDAcUiDw==",
+      "versoes": [
+        "1.1.0"
+      ]
+    }
+  ],
+  "gerado_em": "2026-11-17T11:18:28Z"
+}
