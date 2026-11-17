@@ -62,7 +62,107 @@
       "versoes": [
         "1.1.0"
       ]
+    },
+    {
+      "nome": "resumo-do-funil",
+      "versao": "1.0.0",
+      "titulo": "Resumo do funil",
+      "o_que_faz": "Manda ao dono, no dia, na semana ou no mês escolhidos, o que foi registrado no funil (contatos, atendimentos, distribuição, fases, visitas, propostas, fechamentos e perdas, tarefas e o que vem à frente), o funil de agora, os gargalos, uma linha por cliente com o que ele procura e sugestões para fechar mais.",
+      "categoria": "Relatórios",
+      "quando": "Todo dia, toda semana ou todo mês, no horário escolhido",
+      "faz": [
+        "Lê só o que já está registrado no sistema",
+        "Mostra o funil de agora, os gargalos e as sugestões",
+        "Entrega uma mensagem na conversa do titular"
+      ],
+      "custo": "IA só nas sugestões, com chave para desligar.",
+      "pede": [
+        {
+          "rotulo": "Frequência do resumo",
+          "tipo": "escolha",
+          "obrigatorio": false,
+          "padrao": "diaria"
+        },
+        {
+          "rotulo": "Dia da semana (resumo semanal)",
+          "tipo": "escolha",
+          "obrigatorio": false,
+          "padrao": "sexta"
+        },
+        {
+          "rotulo": "Dia do mês (resumo mensal)",
+          "tipo": "numero",
+          "obrigatorio": false,
+          "padrao": 31
+        },
+        {
+          "rotulo": "Uma linha por cliente, com o que ele quer",
+          "tipo": "sim_nao",
+          "obrigatorio": false,
+          "padrao": true
+        },
+        {
+          "rotulo": "Clientes por resumo",
+          "tipo": "numero",
+          "obrigatorio": false,
+          "padrao": 8
+        },
+        {
+          "rotulo": "Palavras de urgência",
+          "tipo": "texto",
+          "obrigatorio": false,
+          "padrao": "urgente\nurgência\no quanto antes\nimediat\nesta semana\nesse mês\nprecisa logo\nprazo"
+        },
+        {
+          "rotulo": "Tipos de negócio",
+          "tipo": "texto",
+          "obrigatorio": false
+        },
+        {
+          "rotulo": "Campos do item ligado",
+          "tipo": "texto",
+          "obrigatorio": false
+        },
+        {
+          "rotulo": "Palavras de visita",
+          "tipo": "texto",
+          "obrigatorio": false,
+          "padrao": "visita"
+        },
+        {
+          "rotulo": "Palavras de proposta",
+          "tipo": "texto",
+          "obrigatorio": false,
+          "padrao": "proposta\ncontraproposta"
+        },
+        {
+          "rotulo": "Palavras da fase de negociação",
+          "tipo": "texto",
+          "obrigatorio": false,
+          "padrao": "negocia\nproposta"
+        },
+        {
+          "rotulo": "O que as sugestões devem buscar",
+          "tipo": "texto",
+          "obrigatorio": false,
+          "padrao": "fechar mais negócios"
+        },
+        {
+          "rotulo": "Sugestões da IA",
+          "tipo": "sim_nao",
+          "obrigatorio": false,
+          "padrao": true
+        }
+      ],
+      "versao_minima": "1.6.3",
+      "horario": "0 20 * * *",
+      "arquivo": "pacotes/resumo-do-funil-1.0.0.zip",
+      "sha256": "8e6330af34e740eed8c4aa192f226817473276bf4ca493973cde487f2b687a4d",
+      "assinatura": "1ZpH5S3vkSk+gtUCPsrwofUVKqKcDIjEJ/2DZemexd5Qsf/5QB0A0isftNh90SAXwHXIz/ZZjbougbgr8+CwBw==",
+      "versoes": [
+        "1.0.0"
+      ]
     }
   ],
-  "gerado_em": "2026-11-17T11:18:28Z"
+  "gerado_em": "2026-11-17T11:18:32Z"
 }
